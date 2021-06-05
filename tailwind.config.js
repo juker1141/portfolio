@@ -14,6 +14,7 @@ module.exports = {
       },
       colors: {
         'primary': '#121212',
+        'lightblue': '#F4F9FC',
       },
     },
     colors: {
@@ -23,10 +24,14 @@ module.exports = {
       white: colors.white,
       purple: colors.purple,
       violet: colors.violet,
+      yellow: colors.yellow,
+      blue: colors.blue,
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      letterSpacing: ['hover', 'focus'],
+    },
   },
   plugins: [],
 }

@@ -1,10 +1,7 @@
 const skillsDetail = [
-  { title: 'Front-End Skills', contents: ['React', 'Redux', 'Vue', 'RWD', 'SCSS', 'Tailwind', 'Bootstrap4', 'Html5', 'CSS3'] },
-  { title: 'Back-End Skills', contents: ['Node', 'Express', 'MongoDB'] },
-  { title: 'Tools & Others', contents: ['git', 'github', 'Heroku'] },
+  { title: 'Front-End Skills', icon: 'devices', contents: ['React & Redux', 'Vue', 'RWD', 'SASS & SCSS', 'Tailwind CSS & Bootstrap 4', 'JavaScript', 'Html 5', 'CSS 3'] },
+  { title: 'Back-End Skills', icon: 'code', contents: ['Node', 'Express', 'MongoDB'] },
+  { title: 'Tools & Others', icon: 'home_repair_service', contents: ['Git', 'Github', 'Heroku'] },
 ];
 
 export default skillsDetail;
-
-
-
