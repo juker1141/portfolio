@@ -3,9 +3,26 @@
 @tailwind components;
 @tailwind utilities;
 
-.font-Oswald {
-  font-family: "Oswald";
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none {
+  overflow: -moz-scrollbars-none;
+}
+
 .font-BarlowCondensed {
   font-family: "Barlow Condensed", sans-serif;
+}
+
+.font-Caveat {
+  font-family: "Caveat", cursive;
+}
+
+.font-Raleway {
+  font-family: "Raleway", sans-serif;
 }

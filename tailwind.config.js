@@ -14,7 +14,7 @@ module.exports = {
       },
       colors: {
         'primary': '#121212',
-        'lightblue': '#F4F9FC',
+        'lightBlue': '#F4F9FC',
       },
     },
     colors: {
@@ -26,6 +26,7 @@ module.exports = {
       violet: colors.violet,
       yellow: colors.yellow,
       blue: colors.blue,
+      red: colors.red,
     }
   },
   variants: {
