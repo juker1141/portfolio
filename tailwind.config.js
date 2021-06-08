@@ -16,6 +16,12 @@ module.exports = {
         'primary': '#121212',
         'lightBlue': '#F4F9FC',
       },
+      spacing: {
+        '144': '36rem',
+      },
+      animation: {
+        'spin-slow': 'spin 20s linear infinite',
+      }
     },
     colors: {
       // Build your palette here

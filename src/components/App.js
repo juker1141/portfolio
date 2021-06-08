@@ -20,7 +20,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="overflow-hidden p-5 text-blue-900 w-full h-screen" >
+      <div className="overflow-hidden p-2 lg:p-5 text-blue-900 w-full h-screen" >
         <div className={`${this.renderThemeColor()} h-full overflow-y-auto scrollbar-none`}>
           <BrowserRouter>
             <div>

@@ -12,12 +12,11 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="pt-48 h-full">
-        <div className="container mx-auto">
+      <div className="h-full">
+        <div className="container mx-auto flex flex-col">
           <Banner />
           <About />
         </div>
-
       </div>
     );
   };
