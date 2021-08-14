@@ -11,11 +11,10 @@ class App extends React.Component {
     return (
       <div className="p-2 lg:p-5 text-blue-900 w-full h-full overflow-y-auto relative" >
         <div className="fixed top-0 w-full pt-2 lg:pt-5 bg-white z-20" />
-        123
-        {/* <Header />
+        <Header />
         <Home />
         <Footer />
-        <GuideButton /> */}
+        <GuideButton />
         <div className="fixed bottom-0 w-full pb-2 lg:pb-5 bg-white z-20" />
       </div>
     )
