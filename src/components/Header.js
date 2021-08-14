@@ -18,7 +18,7 @@ class Header extends React.Component {
             type="button"
             className="flex justify-center items-center lg:hidden"
           >
-            <span class="material-icons p-2 text-3xl">
+            <span className="material-icons p-2 text-3xl">
               menu
             </span>
           </button>

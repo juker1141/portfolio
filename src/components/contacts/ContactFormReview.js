@@ -25,7 +25,7 @@ const ContactFormReview = (props) => {
             focus:outline-none focus:shadow-outline rounded flex justify-center items-center"
           onClick={props.onCancel}
         >
-          <span class="material-icons mr-2">
+          <span className="material-icons mr-2">
             edit
           </span>
           Edit

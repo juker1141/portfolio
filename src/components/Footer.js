@@ -8,17 +8,17 @@ const Footer = () => {
       <ul className="flex justify-center w-full mb-6">
         <li className="mr-5">
           <a href="#">
-            <i class="fab fa-linkedin text-2xl"></i>
+            <i className="fab fa-linkedin text-2xl"></i>
           </a>
         </li>
         <li className="mr-5">
           <a href="#">
-            <i class="fab fa-github-square text-2xl"></i>
+            <i className="fab fa-github-square text-2xl"></i>
           </a>
         </li>
         <li>
           <a href="mailto:juker1141@gmail.com">
-            <i class="fas fa-envelope-square text-2xl"></i>
+            <i className="fas fa-envelope-square text-2xl"></i>
           </a>
         </li>
       </ul>
