@@ -2,10 +2,12 @@ import { TOGGLE_MODAL } from './types';
 import emailjs from 'emailjs-com';
 import keys from '../config/keys';
 
-
 export const sendEmail = (formValues) => async (dispatch) => {
 
-  console.log()
+  console.log(keys.emailjsServicesID,
+    keys.emailjsTemplateID,
+    keys.emailjsUserID
+  )
   emailjs.send(
     keys.emailjsServicesID,
     keys.emailjsTemplateID,
