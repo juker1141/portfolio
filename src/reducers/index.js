@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
-import themeColorReducer from './themeColorReducer';
-// import { reducer as reduxForm } from 'redux-form';
+import { reducer as reduxForm } from 'redux-form';
+import modalReducer from './modalReducer';
 
 export default combineReducers({
-  themeColor: themeColorReducer,
+  form: reduxForm,
+  modal: modalReducer,
 })

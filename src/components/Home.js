@@ -1,25 +1,21 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { updateThemeColor } from '../actions';
 
 import Banner from './Banner';
 import About from './About';
+import Works from './Works';
+import Contact from './contacts/Contact';
 
-class Home extends React.Component {
-  componentDidMount() {
-    this.props.updateThemeColor('lightBlue')
-  }
-
-  render() {
-    return (
-      <div className="h-full">
-        <div className="container mx-auto flex flex-col">
-          <Banner />
-          <About />
-        </div>
+const Home = () => {
+  return (
+    <div className="h-full bg-lightBlue pb-8 lg:pb-16">
+      <div className="container mx-auto flex flex-col items-center relative">
+        <Banner />
+        <About />
+        <Works />
+        <Contact />
       </div>
-    );
-  };
+    </div>
+  );
 };
 
-export default connect(null, { updateThemeColor })(Home);
+export default Home;

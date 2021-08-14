@@ -1,1 +1,1 @@
-export const UPDATE_THEME_COLOR = 'UPDATE_THEME_COLOR';
+export const TOGGLE_MODAL = 'TOGGLE_MODAL';

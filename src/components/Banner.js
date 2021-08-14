@@ -1,8 +1,8 @@
 import React from 'react';
-import bannerImg from '../assets/banner.svg';
-import bannerMobileImg from '../assets/banner-mobile.svg';
-import github from '../assets/github.svg';
-import gear from '../assets/gear.svg';
+import bannerImg from '../assets/img/banner.svg';
+import bannerMobileImg from '../assets/img/banner-mobile.svg';
+import github from '../assets/img/github.svg';
+import gear from '../assets/img/gear.svg';
 
 const bannerImgStyle = {
   backgroundImage: `url('${bannerImg}')`,
@@ -34,11 +34,11 @@ const Banner = () => {
   return (
     <div className="flex flex-col items-center lg:flex-row">
       <div className="lg:h-screen mt-48 lg:mt-0 w-full lg:w-1/2 flex flex-col justify-center items-center">
-        <div className="lg:text-5xl text-center font-Raleway mb-10">
-          <div className="text-2xl lg:text-7xl mb-4 lg:mb-0">Hello my name is</div>
-          <div className="text-6xl lg:text-8xl font-extrabold lg:inline-block lg:font-black lg:ml-4">Ryu</div>
+        <div className="text-center font-Raleway mb-8">
+          <div className="text-3xl lg:text-5xl mb-4">Hello my name is</div>
+          <div className="text-6xl lg:text-7xl font-extrabold lg:inline-block lg:font-black lg:ml-4">Ryu</div>
         </div>
-        <div className="flex flex-col justify-center break-words lg:text-xl w-5/6 lg:w-2/3">
+        <div className="flex flex-col justify-center text-center break-words lg:text-xl w-5/6 lg:w-2/3">
           <div>
             Love programming and turn ideas into reality. Curious about every details in computer science. Try different ways to slove problem when facing challenges.</div>
         </div>
@@ -47,7 +47,7 @@ const Banner = () => {
         <div className="h-full w-full absolute hidden lg:block" style={bannerImgStyle}>
           <div
             className="absolute animate-bounce lg:bottom-36 lg:right-16 lg:mb-2 lg:w-16 lg:h-16
-            xl:bottom-28 xl:right-20 xl:mr-4 xl:mb-4 2xl:bottom-16 2xl:right-16 2xl:mr-7 2xl:h-24 2xl:w-28"
+            xl:bottom-28 xl:right-20 xl:mr-4 xl:mb-4 2xl:bottom-20 2xl:right-16 2xl:mr-5 2xl:mb-3 2xl:h-24 2xl:w-28"
             style={githubImgStyle}
           ></div>
           <div

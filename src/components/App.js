@@ -1,42 +1,24 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
-import { connect } from 'react-redux';
 
 import Header from './Header';
-// import Banner from './Banner';
-// import Portfolio from './Portfolio';
-import Menu from './Menu';
 import Home from './Home';
+import Footer from './Footer';
+import GuideButton from './GuideButton';
 
 class App extends React.Component {
-  renderThemeColor() {
-    switch (this.props.themeColor) {
-      case 'blue':
-        return 'bg-blue-100';
-      case 'lightBlue':
-        return 'bg-lightBlue';
-    }
-  }
 
   render() {
     return (
-      <div className="overflow-hidden p-2 lg:p-5 text-blue-900 w-full h-screen" >
-        <div className={`${this.renderThemeColor()} h-full overflow-y-auto scrollbar-none`}>
-          <BrowserRouter>
-            <div>
-              <Header />
-              <Route exact path="/menu" component={Menu} />
-              <Route exact path="/" component={Home} />
-            </div>
-          </BrowserRouter>
-        </div>
+      <div className="p-2 lg:p-5 text-blue-900 w-full h-full overflow-y-auto relative" >
+        <div className="fixed top-0 w-full pt-2 lg:pt-5 bg-white z-20" />
+        <Header />
+        <Home />
+        <Footer />
+        <GuideButton />
+        <div className="fixed bottom-0 w-full pb-2 lg:pb-5 bg-white z-20" />
       </div>
     )
   }
 };
 
-const mapStateToProps = (state) => {
-  return { themeColor: state.themeColor };
-}
-
-export default connect(mapStateToProps)(App);
+export default App;
