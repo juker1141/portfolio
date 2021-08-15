@@ -26,21 +26,35 @@ class Header extends React.Component {
           ${this.state.menuShow ? 'fixed lg:relative' : 'hidden'}`}>
             <ul className="lg:flex lg:items-center">
               <li className="py-3 lg:py-0">
-                <a href="#" className="px-3 lg:px-6 hover:tracking-wide lg:hover:border-b-2 lg:hover:pb-2">About</a>
+                <a
+                  onClick={() => { this.setState({ menuShow: false }) }}
+                  href="#about"
+                  className="px-3 lg:px-6 hover:tracking-wide lg:hover:border-b-2 lg:hover:pb-2"
+                >
+                  About
+                </a>
               </li>
               <li className="py-3 lg:py-0">
-                <a href="#" className="px-3 lg:px-6 hover:tracking-wide lg:hover:border-b-2 lg:hover:pb-3">Works</a>
+                <a
+                  onClick={() => { this.setState({ menuShow: false }) }}
+                  href="#works"
+                  className="px-3 lg:px-6 hover:tracking-wide lg:hover:border-b-2 lg:hover:pb-3"
+                >
+                  Works
+                </a>
               </li>
             </ul>
             <div className="flex items-end">
-              <button
+              <a
+                onClick={() => { this.setState({ menuShow: false }) }}
+                href="#contact"
                 onMouseOver={() => { setTimeout((() => { this.setState({ sayhelloHover: true }) }), 200) }}
                 onMouseOut={() => { this.setState({ sayhelloHover: false }) }}
                 className="lg:flex justify-between items-end transition-all delay-200 hover:tracking-wide focus:outline-none px-3 py-3 lg:py-0 lg:px-6"
-                type="button">
+              >
                 Contact
                 <i className={`far ${this.state.sayhelloHover ? 'fa-comment-dots' : 'fa-comment'} ml-2`}></i>
-              </button>
+              </a>
             </div>
           </div>
         </div>

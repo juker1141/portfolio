@@ -3,18 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .scrollbar-none::-webkit-scrollbar {
-  display: none;
-}
-
-.scrollbar-none {
-  -ms-overflow-style: none;
-}
-
-.scrollbar-none {
-  overflow: -moz-scrollbars-none;
-} */
-
 .font-BarlowCondensed {
   font-family: "Barlow Condensed", sans-serif;
 }
@@ -25,4 +13,16 @@
 
 .font-Raleway {
   font-family: "Raleway", sans-serif;
+}
+
+.font-Orbitron {
+  font-family: "Orbitron", sans-serif;
+}
+
+.font-FugazOne {
+  font-family: "Fugaz One", sans-serif;
+}
+
+.font-FjallaOne {
+  font-family: "Fjalla One", sans-serif;
 }

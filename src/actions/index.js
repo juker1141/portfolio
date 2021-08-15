@@ -3,11 +3,6 @@ import emailjs from 'emailjs-com';
 import keys from '../config/keys';
 
 export const sendEmail = (formValues) => async (dispatch) => {
-
-  console.log(keys.emailjsServicesID,
-    keys.emailjsTemplateID,
-    keys.emailjsUserID
-  )
   emailjs.send(
     keys.emailjsServicesID,
     keys.emailjsTemplateID,
@@ -16,8 +11,7 @@ export const sendEmail = (formValues) => async (dispatch) => {
   )
     .then(() => {
       dispatch({ type: TOGGLE_MODAL, payload: 'success' });
-    }, (error) => {
-      console.log(error)
+    }, () => {
       dispatch({ type: TOGGLE_MODAL, payload: 'warning' });
     });
 };

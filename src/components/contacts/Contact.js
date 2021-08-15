@@ -43,7 +43,7 @@ class Contact extends React.Component {
         <div className="w-full flex justify-center items-center mt-32" >
           <div className="flex flex-col items-center w-full lg:w-1/2 px-8 lg:px-0">
             <div className="font-Raleway text-5xl lg:text-6xl w-full px-6 lg:px-0 text-center relative">
-              <span id="contact" className="absolute -top-112 lg:-top-52"></span>Contact
+              <span id="contact" className="absolute -top-36 lg:-top-52"></span>Contact
             </div>
             <div className="mt-10 lg:text-xl w-full flex flex-col w-full">
               {this.renderContent()}

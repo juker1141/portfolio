@@ -10,7 +10,7 @@ const myPhotoStyle = {
 
 const About = () => {
   return (
-    <div className="flex flex-col-reverse lg:flex-row justify-center items-center mt-10" >
+    <div className="flex flex-col-reverse lg:flex-row justify-center items-center mt-36 lg:mt-10" >
       <div className="flex flex-col items-center w-full lg:w-1/2">
         <div className="font-Raleway text-5xl lg:text-6xl w-full lg:w-10/12 px-6 lg:px-0 text-left relative">
           <span id="about" className="absolute -top-112 lg:-top-52"></span>About Me

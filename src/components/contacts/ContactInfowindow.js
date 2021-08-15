@@ -21,13 +21,12 @@ class ContactInfowindow extends React.Component {
     );
   }
 
-  renderActions(mainColor) {
+  renderActions(status) {
     return (
       <React.Fragment>
         <button
           onClick={() => { this.props.onCancel() }}
-          className={`bg-${mainColor}-400 text-blue-900 text-base font-bold py-4 lg:py-2 px-6
-                flex items-center rounded justify-center mb-5 lg:mb-0`}
+          className={`${status === 'success' ? 'bg-green-400' : 'bg-yellow-400'} text-blue-900 text-base font-bold py-4 lg:py-2 px-6 flex items-center rounded justify-center mb-5 lg:mb-0`}
         >
           Close window
         </button>
@@ -41,7 +40,7 @@ class ContactInfowindow extends React.Component {
         icon={this.props.status === 'success' ? 'done' : 'priority_high'}
         colorStatus={this.props.status === 'success' ? 'success' : 'warning'}
         content={this.renderContent()}
-        actions={this.renderActions(this.props.status === 'success' ? 'green' : 'yellow')}
+        actions={this.renderActions(this.props.status)}
         onCancel={() => { this.props.onCancel() }}
       />
     )

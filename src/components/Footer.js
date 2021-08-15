@@ -12,7 +12,10 @@ const Footer = () => {
           </a>
         </li>
         <li className="mr-5">
-          <a href="#">
+          <a href="https://github.com/juker1141"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <i className="fab fa-github-square text-2xl"></i>
           </a>
         </li>

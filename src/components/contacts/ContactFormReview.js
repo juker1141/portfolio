@@ -31,8 +31,8 @@ const ContactFormReview = (props) => {
           Edit
         </button>
         <button
-          className="bg-purple-700 text-white text-base font-bold py-4 px-24
-                flex items-center rounded justify-center"
+          className="bg-blue-700 text-white text-base font-bold py-4 px-24
+                flex items-center rounded justify-center hover:bg-blue-900 transition duration-500"
           onClick={() => {
             props.sendEmail(props.formValues);
             props.onEmailSend();
