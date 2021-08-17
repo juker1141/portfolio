@@ -6,26 +6,31 @@ const Footer = () => {
       <hr className="mx-8 lg:mx-24 border" />
       <div className="font-Caveat text-5xl lg:text-6xl text-center pt-8 lg:pt-12 pr-3 mb-6">Ryu</div>
       <ul className="flex justify-center w-full mb-6">
-        <li className="mr-5">
+        <li className="mr-2">
           <a
             href="https://www.linkedin.com/in/chih-lung-tu-a6807821a/"
             target="_blank"
             rel="noreferrer noopener"
+            className="flex items-center m-2"
           >
-            <i className="fab fa-linkedin text-2xl"></i>
+            <i className="fab fa-linkedin text-3xl"></i>
           </a>
         </li>
-        <li className="mr-5">
+        <li className="mr-2">
           <a href="https://github.com/juker1141"
             target="_blank"
             rel="noreferrer noopener"
+            className="flex items-center m-2"
           >
-            <i className="fab fa-github-square text-2xl"></i>
+            <i className="fab fa-github-square text-3xl"></i>
           </a>
         </li>
         <li>
-          <a href="mailto:juker1141@gmail.com">
-            <i className="fas fa-envelope-square text-2xl"></i>
+          <a
+            href="mailto:juker1141@gmail.com"
+            className="flex items-center m-2"
+          >
+            <i className="fas fa-envelope-square text-3xl"></i>
           </a>
         </li>
       </ul>

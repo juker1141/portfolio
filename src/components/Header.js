@@ -25,6 +25,37 @@ class Header extends React.Component {
           <div className={`text-4xl lg:text-3xl lg:flex lg:items-end top-32 lg:top-0
           ${this.state.menuShow ? 'fixed lg:relative' : 'hidden'}`}>
             <ul className="lg:flex lg:items-center">
+              <li className="py-3 lg:hidden">
+                <ul className="flex w-full px-2">
+                  <li className="mr-2 flex items-center">
+                    <a
+                      href="https://www.linkedin.com/in/chih-lung-tu-a6807821a/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="flex items-center m-2"
+                    >
+                      <i className="fab fa-linkedin text-3xl"></i>
+                    </a>
+                  </li>
+                  <li className="mr-2 flex items-center">
+                    <a href="https://github.com/juker1141"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="flex items-center m-2"
+                    >
+                      <i className="fab fa-github-square text-3xl"></i>
+                    </a>
+                  </li>
+                  <li className="flex items-center">
+                    <a
+                      href="mailto:juker1141@gmail.com"
+                      className="flex items-center m-2"
+                    >
+                      <i className="fas fa-envelope-square text-3xl"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
               <li className="py-3 lg:py-0">
                 <a
                   onClick={() => { this.setState({ menuShow: false }) }}
@@ -43,19 +74,19 @@ class Header extends React.Component {
                   Works
                 </a>
               </li>
+              <li className="py-3 lg:py-0">
+                <a
+                  onClick={() => { this.setState({ menuShow: false }) }}
+                  href="#contact"
+                  onMouseOver={() => { setTimeout((() => { this.setState({ sayhelloHover: true }) }), 200) }}
+                  onMouseOut={() => { this.setState({ sayhelloHover: false }) }}
+                  className="lg:flex justify-between items-end transition-all delay-200 hover:tracking-wide focus:outline-none px-3 py-3 lg:py-0 lg:px-6"
+                >
+                  Contact
+                  <i className={`far ${this.state.sayhelloHover ? 'fa-comment-dots' : 'fa-comment'} ml-2`}></i>
+                </a>
+              </li>
             </ul>
-            <div className="flex items-end">
-              <a
-                onClick={() => { this.setState({ menuShow: false }) }}
-                href="#contact"
-                onMouseOver={() => { setTimeout((() => { this.setState({ sayhelloHover: true }) }), 200) }}
-                onMouseOut={() => { this.setState({ sayhelloHover: false }) }}
-                className="lg:flex justify-between items-end transition-all delay-200 hover:tracking-wide focus:outline-none px-3 py-3 lg:py-0 lg:px-6"
-              >
-                Contact
-                <i className={`far ${this.state.sayhelloHover ? 'fa-comment-dots' : 'fa-comment'} ml-2`}></i>
-              </a>
-            </div>
           </div>
         </div>
       </div>
