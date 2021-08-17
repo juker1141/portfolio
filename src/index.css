@@ -3,10 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.font-Roboto {
+  font-family: "Roboto", sans-serif;
+}
+.font-RobotoCondensed {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 .font-BarlowCondensed {
   font-family: "Barlow Condensed", sans-serif;
 }
-
+/* 標題格式 */
 .font-Caveat {
   font-family: "Caveat", cursive;
 }

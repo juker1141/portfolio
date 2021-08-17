@@ -7,7 +7,11 @@ const Footer = () => {
       <div className="font-Caveat text-5xl lg:text-6xl text-center pt-8 lg:pt-12 pr-3 mb-6">Ryu</div>
       <ul className="flex justify-center w-full mb-6">
         <li className="mr-5">
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/in/chih-lung-tu-a6807821a/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <i className="fab fa-linkedin text-2xl"></i>
           </a>
         </li>
@@ -26,7 +30,11 @@ const Footer = () => {
         </li>
       </ul>
       <div className="flex justify-center">
-        <a href="https://tailwindcss.com/">
+        <a
+          href="https://tailwindcss.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <span className="text-xs">Made with </span>
           <span className="text-sm font-black">tailwindcss</span>
         </a>

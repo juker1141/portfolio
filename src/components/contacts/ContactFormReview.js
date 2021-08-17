@@ -16,7 +16,7 @@ const ContactFormReview = (props) => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="w-2/3">
+      <div className="w-5/6 lg:w-2/3">
         {reviewFields}
       </div>
       <div className="mt-8 flex flex-col lg:flex-row lg:justify-center">
@@ -25,21 +25,21 @@ const ContactFormReview = (props) => {
             focus:outline-none focus:shadow-outline rounded flex justify-center items-center"
           onClick={props.onCancel}
         >
-          <span className="material-icons mr-2">
+          <span className="material-icons mr-1">
             edit
           </span>
           Edit
         </button>
         <button
-          className="bg-blue-700 text-white text-base font-bold py-4 px-24
-                flex items-center rounded justify-center hover:bg-blue-900 transition duration-500"
+          className="bg-blue-900 text-white text-base font-bold py-4 px-24
+                flex items-center rounded justify-center transition duration-500"
           onClick={() => {
             props.sendEmail(props.formValues);
             props.onEmailSend();
           }}
         >
           Send
-          <span className="material-icons ml-3">
+          <span className="material-icons ml-2">
             mail
           </span>
         </button>
