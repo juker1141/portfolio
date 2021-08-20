@@ -24,7 +24,7 @@ module.exports = {
         'storesImg_sm': "url('https://images.unsplash.com/photo-1502343019212-cc6a09783255?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80')",
         'maskMapImg_sm': "url('https://images.unsplash.com/photo-1617480088922-2f606360c354?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80')",
         'emailyImg_lg_1': "url('../src/assets/img/emaily_1.jpg')",
-        'emailyImg_lg_2': "url('../src/assets/img/emaily_2.jpg')",
+        'emailyImg_lg_2': "url('../src/assets/img/emaily_3.jpg')",
         'storesImg_lg_1': "url('../src/assets/img/stores_1.jpg')",
         'storesImg_lg_2': "url('../src/assets/img/stores_2.jpg')",
         'maskMapImg_lg_1': "url('../src/assets/img/maskMap_1.jpg')",

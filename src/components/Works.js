@@ -37,7 +37,7 @@ const Works = () => {
                 <i className="fab fa-github-square text-3xl"></i>
               </a>
             </div>
-            <ul className="mb-2 flex text-white text-sm font-bold">
+            <ul className="mb-2 flex text-white text-xs font-bold">
               <li className="px-2 bg-green-500 rounded-lg mr-2">Vue</li>
               <li className="px-2 bg-green-500 rounded-lg mr-2">Vuex</li>
               <li className="px-2 bg-purple-600 rounded-lg">BS4</li>
@@ -103,7 +103,7 @@ const Works = () => {
                 <i className="fab fa-github-square text-3xl"></i>
               </a>
             </div>
-            <ul className="mb-2 flex text-white text-sm font-bold">
+            <ul className="mb-2 flex text-white text-xs font-bold">
               <li className="px-2 bg-blue-600 rounded-lg mr-2">React</li>
               <li className="px-2 bg-purple-600 rounded-lg mr-2">Redux</li>
               <li className="px-2 bg-primary rounded-lg mr-2">Express</li>

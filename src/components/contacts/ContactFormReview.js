@@ -21,8 +21,8 @@ class ContactFormReview extends React.Component {
   render() {
     return (
       <div className="flex flex-col items-center">
+        <div className="mt-5 flex w-full lg:justify-center">{this.props.t('contact.remind')}</div>
         <div className="w-5/6 lg:w-2/3">
-          <div className="mt-5 text-center">{this.props.t('contact.remind')}</div>
           <div className="mt-5">{this.reviewFields()}</div>
         </div>
         <div className="mt-8 flex flex-col lg:flex-row lg:justify-center">
