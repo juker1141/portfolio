@@ -3,11 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.font-Roboto {
-  font-family: "Roboto", sans-serif;
+.font-default {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
 }
 .font-RobotoCondensed {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Noto Sans TC", sans-serif;
 }
 
 .font-BarlowCondensed {
@@ -32,4 +32,13 @@
 
 .font-FjallaOne {
   font-family: "Fjalla One", sans-serif;
+}
+.toggle-checkbox:checked {
+  right: 0;
+  border-color: #1e3a8a;
+  transition: 0.4s;
+}
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #1e3a8a;
+  transition: 0.4s;
 }

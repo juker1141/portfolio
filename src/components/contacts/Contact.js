@@ -28,7 +28,7 @@ class Contact extends React.Component {
             <div className="font-Raleway text-5xl lg:text-6xl w-full text-left lg:text-center relative">
               <span id="contact" className="absolute -top-36 lg:-top-52"></span>Contact
             </div>
-            <div className="mt-10 lg:text-xl w-full flex flex-col w-full">
+            <div className="lg:text-xl w-full flex flex-col w-full">
               {this.renderContent()}
             </div>
             {this.props.modal ?

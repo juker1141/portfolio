@@ -1,6 +1,8 @@
 import React from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 
 const Works = () => {
+  const { t } = useTranslation();
   return (
     <div className="w-full flex flex-col items-cneter mt-32">
       <div className="flex flex-col items-start w-full md:px-24 lg:px-16">
@@ -9,7 +11,7 @@ const Works = () => {
           My Works
         </div>
         <div className="mt-10 lg:text-xl w-full lg:w-10/12 px-6 lg:px-0 flex break-words">
-          Here are a few projects I've worked on recently.
+          {t('works.description.title')}
         </div>
       </div>
       <ul className="mt-16 lg:mt-24 w-full px-3 lg:px-0 flex flex-col items-center">
@@ -35,8 +37,15 @@ const Works = () => {
                 <i className="fab fa-github-square text-3xl"></i>
               </a>
             </div>
-            <div className="mb-3"><span className="font-bold">Hardware Store</span> is an ecommerce websites work.</div>
-            <div>I developing this websites at my last job, because I was working in a hardware store then. That's why I can develop this websites from the point of the users. It has a complete CMS that you can check all products and orders at PC and mobile device.</div>
+            <ul className="mb-2 flex text-white text-sm font-bold">
+              <li className="px-2 bg-green-500 rounded-lg mr-2">Vue</li>
+              <li className="px-2 bg-green-500 rounded-lg mr-2">Vuex</li>
+              <li className="px-2 bg-purple-600 rounded-lg">BS4</li>
+            </ul>
+            <div className='mb-3'><strong>Hardware Store</strong> {t('works.description.stores.header')}</div>
+            <Trans>
+              {t('works.description.stores.content')}
+            </Trans>
             <div className="flex justify-end mt-8">
               <a
                 href="https://juker1141.github.io/js_finialhw_Store/#/home"
@@ -46,8 +55,8 @@ const Works = () => {
               >
                 <span className="absolute w-52 h-52 transform -rotate-45 group-hover:-top-14 group-hover:-left-8 transition-all ease-linear duration-300 bg-blue-900 left-36 top-14"></span>
                 <span className="relative font-RobotoCondensed text-base lg:text-xl group-hover:text-white duration-300 flex items-center">
-                  <span className="absolute w-full bottom-0 border-b-2 group-hover:border-blue-900 duration-300"></span>
-                  Visit Website
+                  <span className="absolute w-full bottom-0 border-b-2 border-blue-900 duration-300"></span>
+                  {t('works.visitbutton')}
                   <span className="material-icons text-xl ml-1">
                     launch
                   </span>
@@ -62,9 +71,8 @@ const Works = () => {
               >
                 <span className="relative font-RobotoCondensed text-base lg:text-xl flex items-center
                 ">
-                  <span className="absolute w-full bottom-0 border-b-2 group-hover:border-blue-900
-                  duration-150"></span>
-                  Visit Website
+                  <span className="absolute w-full bottom-0 border-b-2 border-blue-900 duration-150"></span>
+                  {t('works.visitbutton')}
                   <span className="material-icons text-xl ml-1">
                     launch
                   </span>
@@ -95,9 +103,16 @@ const Works = () => {
                 <i className="fab fa-github-square text-3xl"></i>
               </a>
             </div>
-            <div className="mb-3"><span className="font-bold">Emaily</span> is a app that can send email survey to your users and collect their feedback.</div>
-            <div>In front-end, I build with React and Redux.</div>
-            <div>And use express and mongoDB to build database server.</div>
+            <ul className="mb-2 flex text-white text-sm font-bold">
+              <li className="px-2 bg-blue-600 rounded-lg mr-2">React</li>
+              <li className="px-2 bg-purple-600 rounded-lg mr-2">Redux</li>
+              <li className="px-2 bg-primary rounded-lg mr-2">Express</li>
+              <li className="px-2 bg-green-500 rounded-lg">mongoDB</li>
+            </ul>
+            <div className="mb-3"><span className="font-bold">Emaily</span> {t('works.description.emaily.header')}</div>
+            <Trans>
+              {t('works.description.emaily.content')}
+            </Trans>
             <div className="flex justify-end mt-8">
               <a
                 href="https://vast-retreat-86807.herokuapp.com/"
@@ -107,9 +122,8 @@ const Works = () => {
               >
                 <span className="absolute w-52 h-52 transform -rotate-45 group-hover:-top-14 group-hover:-left-8 transition-all ease-linear duration-300 bg-blue-900 left-36 top-14"></span>
                 <span className="relative font-RobotoCondensed text-base lg:text-xl group-hover:text-white duration-300 flex items-center">
-                  <span className="absolute w-full bottom-0 border-b-2 group-hover:border-blue-900
-                  duration-150"></span>
-                  Visit Website
+                  <span className="absolute w-full bottom-0 border-b-2 border-blue-900 duration-300"></span>
+                  {t('works.visitbutton')}
                   <span className="material-icons text-xl ml-1">
                     launch
                   </span>
@@ -124,8 +138,8 @@ const Works = () => {
               >
                 <span className="relative font-RobotoCondensed text-base lg:text-xl flex items-center
                 ">
-                  <span className="absolute w-full bottom-0 border-b-2 group-hover:border-blue-900"></span>
-                  Visit Website
+                  <span className="absolute w-full bottom-0 border-b-2 border-blue-900 duration-150"></span>
+                  {t('works.visitbutton')}
                   <span className="material-icons text-xl ml-1">
                     launch
                   </span>
@@ -159,10 +173,15 @@ const Works = () => {
                 <i className="fab fa-github-square text-3xl"></i>
               </a>
             </div>
-            <div className="mb-3"><span className="font-bold">Mask Map</span> could find masks close to your homes or work,</div>
-            <div>when people built maskmap in Taiwan, they usually use OSM and leaflet.
-              But I want to try the google map, becsuse its UI and Maps are interesting.</div>
-            <div>In this time, I've learned a lot of google map.</div>
+            <ul className="mb-2 flex text-white text-xs font-bold">
+              <li className="px-2 bg-blue-600 rounded-lg mr-2">React</li>
+              <li className="px-2 bg-purple-600 rounded-lg mr-2">Redux</li>
+              <li className="px-2 bg-red-600 rounded-lg">Google map api</li>
+            </ul>
+            <div className="mb-3"><span className="font-bold">Mask Map</span> {t('works.description.maskmap.header')}</div>
+            <Trans>
+              {t('works.description.maskmap.content')}
+            </Trans>
             <div className="flex justify-end mt-8">
               <a
                 href="https://search-mask-21314.herokuapp.com/"
@@ -172,8 +191,8 @@ const Works = () => {
               >
                 <span className="absolute w-52 h-52 transform -rotate-45 group-hover:-top-14 group-hover:-left-8 transition-all ease-linear duration-300 bg-blue-900 left-36 top-14"></span>
                 <span className="relative font-RobotoCondensed text-base lg:text-xl group-hover:text-white duration-300 flex items-center">
-                  <span className="absolute w-full bottom-0 border-b-2 group-hover:border-blue-900"></span>
-                  Visit Website
+                  <span className="absolute w-full bottom-0 border-b-2 border-blue-900 duration-300"></span>
+                  {t('works.visitbutton')}
                   <span className="material-icons text-xl ml-1">
                     launch
                   </span>
@@ -188,9 +207,8 @@ const Works = () => {
               >
                 <span className="relative font-RobotoCondensed text-base lg:text-xl flex items-center
                 ">
-                  <span className="absolute w-full bottom-0 border-b-2 group-hover:border-blue-900
-                  duration-150"></span>
-                  Visit Website
+                  <span className="absolute w-full bottom-0 border-b-2 border-blue-900 duration-150"></span>
+                  {t('works.visitbutton')}
                   <span className="material-icons text-xl ml-1">
                     launch
                   </span>

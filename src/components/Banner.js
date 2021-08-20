@@ -1,4 +1,6 @@
 import React from 'react';
+import { Trans, useTranslation } from 'react-i18next';
+
 import bannerImg from '../assets/img/banner.svg';
 import bannerMobileImg from '../assets/img/banner-mobile.svg';
 import github from '../assets/img/github.svg';
@@ -30,17 +32,21 @@ const gearImgStyle = {
 }
 
 const Banner = () => {
+  const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col items-center lg:flex-row">
+    <div className="flex flex-col items-center lg:flex-row w-full" id="banner">
       <div className="lg:h-screen mt-48 lg:mt-0 w-full lg:w-1/2 flex flex-col justify-center items-center">
         <div className="text-center font-Raleway mb-8">
-          <div className="text-3xl lg:text-5xl mb-4">Hello my name is</div>
-          <div className="text-6xl lg:text-7xl font-extrabold lg:inline-block lg:font-black lg:ml-4">Ryu</div>
+          <div className="text-3xl lg:text-5xl mb-4">{t('banner.hello')}</div>
+          <div className="text-6xl lg:text-7xl font-extrabold lg:inline-block lg:font-black">Ryu</div>
         </div>
         <div className="flex flex-col justify-center text-center break-words lg:text-xl w-5/6 lg:w-2/3">
           <div>
-            Love programming and turn ideas into reality. Curious about every details in computer science. Try different ways to slove problem when facing challenges.</div>
+            <Trans>
+              {t('banner.content')}
+            </Trans>
+          </div>
         </div>
       </div>
       <div className="h-96 w-full lg:h-144 lg:w-1/2 relative flex items-center z-0">

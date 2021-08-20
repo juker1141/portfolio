@@ -3,10 +3,10 @@ const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0
 
 const validateEmail = (email) => {
   if (re.test(email) === false) {
-    return `The email is invalid: ${email}`;
+    return true;
   }
 
-  return
+  return;
 };
 
 export default validateEmail;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { withTranslation } from 'react-i18next';
 import { toggleModal } from '../../actions';
 import Modal from '../Modal';
 
@@ -8,17 +9,17 @@ class ContactInfowindow extends React.Component {
     if (this.props.modal === 'success') {
       return (
         <React.Fragment>
-          <div className="text-xl font-black mb-5">Success !</div>
-          <div className="mb-3 font-bold">I have already received your reply</div>
-          <div className="font-bold">and will get back to you shortly.</div>
+          <div className="text-xl font-black mb-5">{this.props.t('infowindow.success.title')}</div>
+          <div className="mb-3 font-bold">{this.props.t('infowindow.success.description')}</div>
+          <div className="font-bold">{this.props.t('infowindow.success.content')}</div>
         </React.Fragment>
       )
     }
     return (
       <React.Fragment>
-        <div className="text-xl font-black mb-5">Oops !</div>
-        <div className="mb-3 font-bold">Something went wrong</div>
-        <div>Please wait for moment and try again on sending email</div>
+        <div className="text-xl font-black mb-5">{this.props.t('infowindow.warning.title')}</div>
+        <div className="mb-3 font-bold">{this.props.t('infowindow.warning.description')}</div>
+        <div>{this.props.t('infowindow.warning.content')}</div>
       </React.Fragment>
     );
   }
@@ -30,7 +31,7 @@ class ContactInfowindow extends React.Component {
           onClick={() => { this.handleClick() }}
           className="bg-blue-900 text-white text-base font-bold py-4 lg:py-2 px-6 flex items-center rounded justify-center mb-5 lg:mb-0"
         >
-          Close window
+          {this.props.t('infowindow.closebutton')}
         </button>
       </React.Fragment>
     )
@@ -68,4 +69,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps, { toggleModal })(ContactInfowindow);
+export default connect(mapStateToProps, { toggleModal })(withTranslation()(ContactInfowindow));

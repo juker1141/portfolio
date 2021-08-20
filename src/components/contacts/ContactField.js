@@ -2,7 +2,7 @@ import React from 'react';
 
 class ContactField extends React.Component {
   render() {
-    if (this.props.label === 'Name' || this.props.label === 'Email') {
+    if (this.props.input.name === 'name' || this.props.input.name === 'email') {
       return (
         <div className="mb-4">
           <label className="block text-xl font-bold mb-4 pl-2">{this.props.label}</label>
@@ -21,7 +21,7 @@ class ContactField extends React.Component {
           {/* 如果用戶點擊了，並且也有 error 的訊息，那就顯示 error 的訊息 */}
         </div>
       );
-    } else if (this.props.label === 'Messages') {
+    } else if (this.props.input.name === 'messages') {
       return (
         <div>
           <label className="block text-xl font-bold mb-4 pl-2">

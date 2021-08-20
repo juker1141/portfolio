@@ -1,23 +1,28 @@
 import _ from 'lodash';
 import React from 'react';
 import { reduxForm, Field } from 'redux-form';
+import { Trans, withTranslation } from 'react-i18next';
 import ContactField from './ContactField';
 import validateEmail from '../../utils/validateEmail';
-import formFields from './formFields';
 
 class ContactForm extends React.Component {
   renderFields() {
-    return _.map(formFields, ({ label, name }) => {
-      return (
-        <Field key={name} component={ContactField} type="text" label={label} name={name} />
-      );
-    });
+    const array = this.props.t('contact.formFields', { returnObjects: true });
+
+    if (array !== 'contact.formFields') {
+      return _.map(array, ({ label, name }) => {
+        return (
+          <Field key={name} component={ContactField} type="text" label={label} name={name} />
+        );
+      });
+    }
+
   };
 
   render() {
     return (
       <form
-        className="flex flex-col"
+        className="flex flex-col mt-10"
         onSubmit={this.props.handleSubmit(this.props.onFormSubmit)}
       // handleSubmit 是 reduxForm 的函式
       >
@@ -34,7 +39,7 @@ class ContactForm extends React.Component {
             <span className="material-icons mr-1">
               clear
             </span>
-            Cancel
+            {this.props.t('contact.button.cancel')}
 
           </button>
           <button
@@ -42,7 +47,7 @@ class ContactForm extends React.Component {
                 flex items-center rounded justify-center disabled:opacity-70 hover:"
             disabled={this.props.invalid || this.props.pristine}
           >
-            Next
+            {this.props.t('contact.button.next')}
             <span className="material-icons ml-1">
               done
             </span>
@@ -53,22 +58,29 @@ class ContactForm extends React.Component {
   }
 }
 
-function validate(values) {
+function validate(values, props) {
   const errors = {};
+  const array = props.t('contact.formFields', { returnObjects: true });
 
   errors.email = validateEmail(values.email || '');
-
-  _.each(formFields, ({ name }) => {
-    if (!values[name]) {
-      errors[name] = `Please provide a ${name}`;
-    }
-  });
+  if (errors.email) {
+    errors.email = <Trans>{props.t('contact.error.email', { email: values.email })}</Trans>
+  }
+  if (array !== 'contact.formFields') {
+    _.each(array, ({ label, name }) => {
+      if (!values[name]) {
+        errors[name] = <Trans>{props.t('contact.error.required', { name: label })}</Trans>;
+      }
+    });
+  }
 
   return errors;
 };
 
-export default reduxForm({
+const form = reduxForm({
   validate, // 驗證用戶輸入的資料
   form: 'surveyForm',
   destroyOnUnmount: false
 })(ContactForm);
+
+export default withTranslation()(form);

@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         'primary': '#121212',
         'lightBlue': '#edf7ff',
+        'lighterBlue': '#d4ecff',
       },
       spacing: {
         '112': '28rem',
@@ -28,20 +29,24 @@ module.exports = {
         'storesImg_lg_2': "url('../src/assets/img/stores_2.jpg')",
         'maskMapImg_lg_1': "url('../src/assets/img/maskMap_1.jpg')",
         'maskMapImg_lg_2': "url('../src/assets/img/maskMap_2.jpg')",
-      })
+      }),
+      inset: {
+        '-34': '-8.5rem',
+      },
     },
     colors: {
       // Build your palette here
       transparent: 'transparent',
       current: 'currentColor',
       white: colors.white,
+      gray: colors.gray,
       green: colors.green,
       purple: colors.purple,
       violet: colors.violet,
       yellow: colors.yellow,
       blue: colors.blue,
       red: colors.red,
-    }
+    },
   },
   variants: {
     extend: {
@@ -49,11 +54,13 @@ module.exports = {
       backgroundImage: ['hover', 'focus'],
       borderWidth: ['hover', 'focus', 'group-hover'],
       padding: ['hover', 'focus'],
-      fontWeight: ['hover', 'focus'],
+      fontWeight: ['hover', 'focus', 'disabled'],
       opacity: ['disabled'],
       rotate: ['group-hover'],
       margin: ['group-hover'],
       inset: ['group-hover'],
+      backgroundColor: ['disabled'],
+      textColor: ['disabled'],
     },
   },
   plugins: [],

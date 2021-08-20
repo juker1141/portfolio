@@ -3,8 +3,10 @@ import React from 'react';
 const Footer = () => {
   return (
     <div className="w-full bg-lightBlue pb-8 lg:pb-16 lg:px-24">
-      <hr className="mx-8 lg:mx-24 border" />
-      <div className="font-Caveat text-5xl lg:text-6xl text-center pt-8 lg:pt-12 pr-3 mb-6">Ryu</div>
+      <hr className="mx-8 lg:mx-24 border border-blue-900" />
+      <div className="flex justify-center">
+        <a href="#banner" className="font-Caveat text-5xl lg:text-6xl pt-8 lg:pt-12 pr-3 mb-6">Ryu</a>
+      </div>
       <ul className="flex justify-center w-full mb-6">
         <li className="mr-2">
           <a
