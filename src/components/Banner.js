@@ -53,7 +53,7 @@ const Banner = () => {
         <div className="h-full w-full absolute hidden lg:block" style={bannerImgStyle}>
           <div
             className="absolute animate-bounce lg:bottom-36 lg:right-16 lg:mb-2 lg:w-16 lg:h-16
-            xl:bottom-28 xl:right-20 xl:mr-4 xl:mb-4 2xl:bottom-20 2xl:right-16 2xl:mr-5 2xl:mb-3 2xl:h-24 2xl:w-28"
+            xl:bottom-28 xl:right-20 xl:mr-4 xl:mb-4 2xl:bottom-20 2xl:right-18 2xl:mr-5 2xl:mb-3 2xl:h-24 2xl:w-28"
             style={githubImgStyle}
           ></div>
           <div

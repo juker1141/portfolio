@@ -1,13 +1,5 @@
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
-import myPhoto from '../assets/img/me.jpg';
-
-const myPhotoStyle = {
-  backgroundImage: `url('${myPhoto}')`,
-  backgroundPosition: 'center',
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
-}
 
 const About = () => {
   const { t } = useTranslation();
@@ -28,7 +20,7 @@ const About = () => {
       </div>
       <div className="lg:w-1/12"></div>
       <div className="flex justify-center items-cneter w-full lg:w-auto mb-10 lg:mb-0">
-        <div className="h-72 w-72 rounded-full" style={myPhotoStyle} />
+        <div className="h-72 w-72 rounded-full bg-meImg bg-top-3 bg-no-repeat bg-cover" />
       </div>
     </div >
   );

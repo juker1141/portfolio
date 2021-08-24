@@ -29,7 +29,7 @@ class ContactInfowindow extends React.Component {
       <React.Fragment>
         <button
           onClick={() => { this.handleClick() }}
-          className="bg-blue-900 text-white text-base font-bold py-4 lg:py-2 px-6 flex items-center rounded justify-center mb-5 lg:mb-0"
+          className="bg-blue-900 text-white text-base font-bold py-2 lg:py-2 px-8 flex items-center rounded justify-center mb-3 lg:mb-2"
         >
           {this.props.t('infowindow.closebutton')}
         </button>

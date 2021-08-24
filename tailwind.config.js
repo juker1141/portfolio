@@ -20,6 +20,7 @@ module.exports = {
         'bounce-slow': 'bounce 2s linear infinite',
       },
       backgroundImage: theme => ({
+        'meImg': "url('../src/assets/img/me.jpg')",
         'emailyImg_sm': "url('https://images.unsplash.com/photo-1563225409-127c18758bd5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')",
         'storesImg_sm': "url('https://images.unsplash.com/photo-1502343019212-cc6a09783255?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80')",
         'maskMapImg_sm': "url('https://images.unsplash.com/photo-1617480088922-2f606360c354?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80')",
@@ -47,6 +48,14 @@ module.exports = {
       blue: colors.blue,
       red: colors.red,
     },
+    backgroundPosition: {
+        bottom: 'bottom',
+        center: 'center',
+        left: 'left',
+        right: 'right',
+        top: 'top',
+        'top-3': 'center top -3rem',
+      }
   },
   variants: {
     extend: {

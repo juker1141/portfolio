@@ -4,21 +4,21 @@
     "hello": "Hello my name is",
     "content": "Love programming and turn ideas into reality. Curious about every details in computer science. Try different ways to slove problem when facing challenges."
   },
-  "about": "I have been self-learning programming for two years. I am proficient in using popular <strong className='font-Raleway'>React</strong> and <strong className='font-Raleway'>Vue</strong> frameworks and have developed a complete website useing <strong className='font-Raleway'>Express and mongoDB</strong>.",
+  "about": "I have been self-learning programming for two years. I am proficient in using popular <strong className='font-Raleway'>React</strong> and <strong className='font-Raleway'>Vue</strong> frameworks and have developed a complete website useing <strong className='font-Raleway'>Express and MongoDB</strong>.",
   "works": {
     "description": {
       "title": "Here are a few projects I've worked on recently.",
       "stores": {
-        "header": "is an ecommerce websites work.",
+        "header": " build with <strong className='font-Raleway'>Vue CLI</strong>.",
         "content": "I developing this websites at my last work, because I was working in a hardware store then. And learn <strong className='font-Raleway'>Vue & Vuex</strong> in my free time.<br />That's why I can develop this websites from the point of the users. It has a complete CMS that you can check all products and orders at PC and mobile device."
       },
       "emaily": {
         "header": "is a app that can send email survey to your users and collect their feedback.",
-        "content": "In front-end, I build with <strong className='font-Raleway'>React</strong> and <strong className='font-Raleway'>Redux</strong>.<br />And use <strong className='font-Raleway'>Express</strong> and <strong className='font-Raleway'>mongoDB</strong> to build database server.<br />It's a good experience to learn about how ajax works in server."
+        "content": "In front-end, I build with <strong className='font-Raleway'>React</strong> and <strong className='font-Raleway'>Redux</strong>.<br />And use <strong className='font-Raleway'>Express</strong> and <strong className='font-Raleway'>MongoDB</strong> to build database server.<br />It's a good experience to learn about how AJAX works in server."
       },
       "maskmap": {
         "header": "could find masks close to your house or work",
-        "content": "when people built maskmap in Taiwan, they usually use OSM and Leaflet. But I want to try the original <strong className='font-Raleway'>Google map api</strong>, becsuse its UI and Maps are beautiful and interesting.<br />In this time, I've learned a lot of how to use <strong className='font-Raleway'>Google map api</strong>."
+        "content": "when people built maskmap in Taiwan, they usually use OSM and Leaflet. But I want to try the original <strong className='font-Raleway'>Google Maps API </strong>, becsuse its UI and API are beautiful and interesting.<br />In this time, I've learned a lot of how to use <strong className='font-Raleway'>Google Maps API </strong>."
       }
     },
     "visitbutton": "Visit Website"

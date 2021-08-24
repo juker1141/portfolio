@@ -12,8 +12,8 @@ i18n
       // github: "/react-i18n-example/locales/{{lng}}/{{ns}}.json"
       loadPath: "/locales/{{lng}}/{{ns}}.json",
     },
-    fallbackLng: "zh",
-    lng: "zh",
+    fallbackLng: "en",
+    lng: "en",
     interpolation: {
       escapeValue: false, // not needed for react!!
     },

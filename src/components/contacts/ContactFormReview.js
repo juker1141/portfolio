@@ -25,9 +25,9 @@ class ContactFormReview extends React.Component {
         <div className="w-5/6 lg:w-2/3">
           <div className="mt-5">{this.reviewFields()}</div>
         </div>
-        <div className="mt-8 flex flex-col lg:flex-row lg:justify-center">
+        <div className="mt-8 flex flex-col-reverse lg:flex-row lg:justify-center">
           <button
-            className="text-base font-bold py-4 lg:py-2 px-6 lg:mr-24 mb-5 lg:mb-0
+            className="text-base font-bold py-4 lg:py-2 px-6 lg:mr-24
             focus:outline-none focus:shadow-outline rounded flex justify-center items-center"
             onClick={this.props.onCancel}
           >
@@ -37,7 +37,7 @@ class ContactFormReview extends React.Component {
             {this.props.t('contact.button.edit')}
           </button>
           <button
-            className="bg-blue-900 text-white text-base font-bold py-4 px-24
+            className="bg-blue-900 text-white text-base font-bold py-4 px-24 mb-5 lg:mb-0
                 flex items-center rounded justify-center transition duration-500"
             onClick={() => {
               this.props.sendEmail(this.props.formValues);

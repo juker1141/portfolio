@@ -35,7 +35,7 @@ const Modal = (props) => {
           <div className="w-full flex justify-center pt-5">
             {props.status ? iconClass(props.status) : ''}
           </div>
-          <div className="px-3 pb-6">
+          <div className="px-3 pb-3">
             <div className="text-center mt-6">
               {props.content}
             </div>

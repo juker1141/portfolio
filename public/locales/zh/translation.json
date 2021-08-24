@@ -4,21 +4,21 @@
     "hello": "嗨 ! 我是",
     "content": "喜歡寫程式，努力將想像變成現實<br/>對未知的事物感到好奇<br/>並喜歡嘗試用不同的方式來解決問題"
   },
-  "about": "從過去兩年自學程式語言到現在，我已經可以熟練運用 <strong className='font-Raleway'>React</strong> 和 <strong className='font-Raleway'>Vue</strong> 等熱門框架，並且使用 <strong className='font-Raleway'>Express & mongoDB</strong> 開發過完整的網站",
+  "about": "從過去兩年自學程式語言到現在，我已經可以熟練運用 <strong className='font-Raleway'>React</strong> 和 <strong className='font-Raleway'>Vue</strong> 等熱門框架，並且使用 <strong className='font-Raleway'>Express & MongoDB</strong> 開發過完整的網站",
   "works": {
     "description": {
-      "title": "這裡有些我近期開發的作品",
+      "title": "這裡有些我近期開發的專案",
       "stores": {
-        "header": "是一個電子商務網站",
+        "header": " 使用 <strong className='font-Raleway'>Vue CLI</strong> 建置",
         "content": "我的第一份工作是在一間傳統五金行，那時候常利用下班時間學習 <strong className='font-Raleway'>Vue & Vuex</strong>，一邊想像傳統行業可以怎麼往電商的方向發展一邊將它編寫出來<br />所以有很多貼心的功能是以使用者的角度去編寫，並且它可以在電腦、平板或手機直接管理訂單及商品資訊"
       },
       "emaily": {
-        "header": "可以寄給用戶們意見調查，並且蒐集他們回饋意見",
-        "content": "前端使用的是 <strong className='font-Raleway'>React</strong> 和 <strong className='font-Raleway'>Redux</strong>，再用 <strong className='font-Raleway'>Express & mongoDB</strong> 架設我的後端。以後端來看 ajax 行為是一種很新鮮的感覺，也讓我更了解彼此之間的關聯"
+        "header": "可以寄給用戶們問卷調查，並且蒐集他們回饋意見",
+        "content": "前端使用的是 <strong className='font-Raleway'>React</strong> 和 <strong className='font-Raleway'>Redux</strong>，再用 <strong className='font-Raleway'>Express & MongoDB</strong> 架設我的後端。以後端來看 AJAX 行為是一種很新鮮的感覺，也讓我更了解彼此之間的關聯"
       },
       "maskmap": {
         "header": "可以搜尋在住家或公司附近有賣口罩的藥局",
-        "content": "在台灣寫這類的網站通常都是使用 OSM 和 Leaflet 的套件，但我想嘗試使用原生的 <strong className='font-Raleway'>Google map api</strong> 來撰寫，因為我覺得它的 UI 跟 api 內容比較美觀有趣，也多虧如此，我學到了很多有關 <strong className='font-Raleway'>Google map api</strong> 的用法"
+        "content": "在台灣寫這類的網站通常都是使用 OSM 和 Leaflet 的套件，但我想嘗試使用原生的 <strong className='font-Raleway'>Google Maps API </strong> 來撰寫，因為我覺得它的 UI 跟 API 內容比較美觀有趣，也多虧如此，我學到了很多有關 <strong className='font-Raleway'>Google Maps API </strong> 的用法"
       }
     },
     "visitbutton": "去看看"

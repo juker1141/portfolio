@@ -42,7 +42,12 @@ const Works = () => {
               <li className="px-2 bg-green-500 rounded-lg mr-2">Vuex</li>
               <li className="px-2 bg-purple-600 rounded-lg">BS4</li>
             </ul>
-            <div className='mb-3'><strong>Hardware Store</strong> {t('works.description.stores.header')}</div>
+            <div className='mb-3'>
+              <strong>Hardware Store</strong>
+              <Trans>
+                {t('works.description.stores.header')}
+              </Trans>
+            </div>
             <Trans>
               {t('works.description.stores.content')}
             </Trans>
@@ -107,7 +112,7 @@ const Works = () => {
               <li className="px-2 bg-blue-600 rounded-lg mr-2">React</li>
               <li className="px-2 bg-purple-600 rounded-lg mr-2">Redux</li>
               <li className="px-2 bg-primary rounded-lg mr-2">Express</li>
-              <li className="px-2 bg-green-500 rounded-lg">mongoDB</li>
+              <li className="px-2 bg-green-500 rounded-lg">MongoDB</li>
             </ul>
             <div className="mb-3"><span className="font-bold">Emaily</span> {t('works.description.emaily.header')}</div>
             <Trans>
@@ -176,7 +181,7 @@ const Works = () => {
             <ul className="mb-2 flex text-white text-xs font-bold">
               <li className="px-2 bg-blue-600 rounded-lg mr-2">React</li>
               <li className="px-2 bg-purple-600 rounded-lg mr-2">Redux</li>
-              <li className="px-2 bg-red-600 rounded-lg">Google map api</li>
+              <li className="px-2 bg-red-600 rounded-lg">Google Maps API </li>
             </ul>
             <div className="mb-3"><span className="font-bold">Mask Map</span> {t('works.description.maskmap.header')}</div>
             <Trans>

@@ -27,11 +27,11 @@ class ContactForm extends React.Component {
       // handleSubmit 是 reduxForm 的函式
       >
         {this.renderFields()}
-        <div className="mt-4 lg:mt-8 flex flex-col lg:flex-row lg:justify-between lg:mx-8 xl:mx-16">
+        <div className="mt-4 lg:mt-8 flex flex-col-reverse lg:flex-row lg:justify-between lg:mx-8 xl:mx-16">
           <button
             className="text-base font-bold py-4 lg:py-2 px-6
                 focus:outline-none focus:shadow-outline rounded flex justify-center items-center
-                disabled:opacity-80 mb-5 lg:mb-0"
+                disabled:opacity-80"
             type="button"
             onClick={this.props.reset}
             disabled={this.props.pristine || this.props.submitting}
@@ -44,7 +44,7 @@ class ContactForm extends React.Component {
           </button>
           <button
             className="bg-blue-900 text-white text-base font-bold py-4 px-24
-                flex items-center rounded justify-center disabled:opacity-70 hover:"
+              flex items-center rounded justify-center disabled:opacity-70 mb-5 lg:mb-0"
             disabled={this.props.invalid || this.props.pristine}
           >
             {this.props.t('contact.button.next')}
