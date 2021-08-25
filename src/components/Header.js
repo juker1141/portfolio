@@ -86,7 +86,10 @@ class Header extends React.Component {
                   className={`flex items-center pt-2 pb-3 px-3 lg:px-6 hover:tracking-wide hover:text-blue-500
                   rounded focus:outline-none ${this.state.languageSelect ? 'bg-lighterBlue' : ''}`}
                 >
-                  Language
+                  <span className="flex items-end">
+                    En | 
+                    <span className="text-3xl lg:text-2xl font-bold pl-2">中</span>
+                  </span>
                   <i className="fas fa-sort-down text-xl ml-2"></i>
                 </button>
                 <ul
@@ -95,22 +98,22 @@ class Header extends React.Component {
                 >
                   <li>
                     <button
-                      onClick={() => { this.handleChange('zh') }}
-                      className="px-6 py-4 w-full rounded-t text-2xl focus:outline-none disabled:bg-gray-200
-                      disabled:font-bold"
-                      disabled={this.props.i18n.language === 'zh'}
-                    >
-                      中文
-                    </button>
-                  </li>
-                  <li className="w-full">
-                    <button
                       onClick={() => { this.handleChange('en') }}
-                      className="px-6 py-4 w-full rounded-b text-2xl focus:outline-none disabled:bg-gray-200
+                      className="px-6 py-4 w-full rounded-t text-2xl focus:outline-none disabled:bg-gray-200
                       disabled:font-bold"
                       disabled={this.props.i18n.language === 'en'}
                     >
                       English
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      onClick={() => { this.handleChange('zh') }}
+                      className="px-6 py-4 w-full rounded-b text-2xl focus:outline-none disabled:bg-gray-200
+                      disabled:font-bold"
+                      disabled={this.props.i18n.language === 'zh'}
+                    >
+                      中文
                     </button>
                   </li>
                 </ul>
