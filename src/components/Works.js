@@ -18,6 +18,222 @@ const Works = () => {
         <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row
           justify-center items-center mb-8 lg:mb-16">
           <div className="w-full sm:w-5/6 lg:w-1/2">
+            <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-metafameImg_sm lg:bg-metafameImg_lg_1
+            lg:hover:bg-metafameImg_lg_2 transition-all duration-500 bg-top bg-no-repeat bg-cover flex items-center justify-center">
+              <div className="font-Orbitron text-white text-2xl md:text-4xl py-3 md:py-6 px-6 bg-primary bg-opacity-60
+              rounded-lg lg:hidden">
+                MetaFame
+              </div>
+            </div>
+          </div>
+          <div className="w-full lg:w-5/12 p-10 px-3 sm:px-24 lg:px-10 xl:px-16">
+            <div className="text-3xl mb-6 font-bold flex justify-between items-end">
+              MetaFame
+              {/* <a
+                href="https://github.com/juker1141/js_finialhw_Store"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <i className="fab fa-github-square text-3xl"></i>
+              </a> */}
+            </div>
+            <ul className="mb-2 flex text-white text-xs font-bold">
+              <li className="px-2 bg-primary rounded-lg mr-2">Next</li>
+              <li className="px-2 bg-purple-600 rounded-lg mr-2">Redux</li>
+              <li className="px-2 bg-blue-600 rounded-lg mr-2">TypeScript</li>
+              <li className="px-2 bg-blue-800 rounded-lg mr-2">Ethers</li>
+              <li className="px-2 bg-sky-500 rounded-lg">Tailwind CSS</li>
+            </ul>
+            <div className='mb-3'>
+              <strong>MetaFame</strong>
+              <Trans>
+                {t('works.description.metafame.header')}
+              </Trans>
+            </div>
+            <Trans>
+              {t('works.description.metafame.content')}
+            </Trans>
+            <div className="flex justify-end mt-8">
+              <a
+                href="https://metafame.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="relative rounded-lg overflow-hidden py-2 px-4 group hidden lg:block"
+              >
+                <span className="absolute w-52 h-52 transform -rotate-45 group-hover:-top-14 group-hover:-left-8 transition-all ease-linear duration-300 bg-blue-900 left-36 top-14"></span>
+                <span className="relative font-RobotoCondensed text-base lg:text-xl group-hover:text-white duration-300 flex items-center">
+                  <span className="absolute w-full bottom-0 border-b-2 border-blue-900 duration-300"></span>
+                  {t('works.visitbutton')}
+                  <span className="material-icons text-xl ml-1">
+                    launch
+                  </span>
+                </span>
+              </a>
+              <a
+                href="https://metafame.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="rounded-lg py-2 px-4 hover:text-white hover:bg-blue-900 group lg:hidden
+                transition-all duration-300"
+              >
+                <span className="relative font-RobotoCondensed text-base lg:text-xl flex items-center
+                ">
+                  <span className="absolute w-full bottom-0 border-b-2 border-blue-900 duration-150"></span>
+                  {t('works.visitbutton')}
+                  <span className="material-icons text-xl ml-1">
+                    launch
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row
+          justify-center items-center mb-8 lg:mb-16">
+          <div className="w-full sm:w-5/6 lg:w-1/2">
+            <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-velhallaImg_sm lg:bg-velhallaImg_lg_1
+            lg:hover:bg-velhallaImg_lg_2 transition-all duration-500 bg-top bg-no-repeat bg-cover flex items-center justify-center">
+              <div className="font-Orbitron text-white text-2xl md:text-4xl py-3 md:py-6 px-6 bg-primary bg-opacity-60
+              rounded-lg lg:hidden">
+                Velhalla
+              </div>
+            </div>
+          </div>
+          <div className="w-full lg:w-5/12 p-10 px-3 sm:px-24 lg:px-10 xl:px-16">
+            <div className="text-3xl mb-6 font-bold flex justify-between items-end">
+              Velhalla
+              {/* <a
+                href="https://github.com/juker1141/js_finialhw_Store"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <i className="fab fa-github-square text-3xl"></i>
+              </a> */}
+            </div>
+            <ul className="mb-2 flex text-white text-xs font-bold">
+              <li className="px-2 bg-primary rounded-lg mr-2">Next</li>
+              <li className="px-2 bg-purple-600 rounded-lg mr-2">Redux</li>
+              <li className="px-2 bg-blue-700 rounded-lg mr-2">Web3</li>
+              <li className="px-2 bg-sky-500 rounded-lg">Tailwind CSS</li>
+            </ul>
+            <div className='mb-3'>
+              <strong>Velhalla</strong>
+              <Trans>
+                {t('works.description.velhalla.header')}
+              </Trans>
+            </div>
+            <Trans>
+              {t('works.description.velhalla.content')}
+            </Trans>
+            <div className="flex justify-end mt-8">
+              <a
+                href="https://velhalla.io"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="relative rounded-lg overflow-hidden py-2 px-4 group hidden lg:block"
+              >
+                <span className="absolute w-52 h-52 transform -rotate-45 group-hover:-top-14 group-hover:-left-8 transition-all ease-linear duration-300 bg-blue-900 left-36 top-14"></span>
+                <span className="relative font-RobotoCondensed text-base lg:text-xl group-hover:text-white duration-300 flex items-center">
+                  <span className="absolute w-full bottom-0 border-b-2 border-blue-900 duration-300"></span>
+                  {t('works.visitbutton')}
+                  <span className="material-icons text-xl ml-1">
+                    launch
+                  </span>
+                </span>
+              </a>
+              <a
+                href="https://juker1141.github.io/js_finialhw_Store/#/home"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="rounded-lg py-2 px-4 hover:text-white hover:bg-blue-900 group lg:hidden
+                transition-all duration-300"
+              >
+                <span className="relative font-RobotoCondensed text-base lg:text-xl flex items-center
+                ">
+                  <span className="absolute w-full bottom-0 border-b-2 border-blue-900 duration-150"></span>
+                  {t('works.visitbutton')}
+                  <span className="material-icons text-xl ml-1">
+                    launch
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row
+          justify-center items-center mb-8 lg:mb-16">
+          <div className="w-full sm:w-5/6 lg:w-1/2">
+            <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-musicImg_sm lg:bg-musicImg_lg_1
+            lg:hover:bg-musicImg_lg_2 transition-all duration-500 bg-top bg-no-repeat bg-cover flex items-center justify-center">
+              <div className="font-Orbitron text-white text-2xl md:text-4xl py-3 md:py-6 px-6 bg-primary bg-opacity-60
+              rounded-lg lg:hidden">
+                Music Station
+              </div>
+            </div>
+          </div>
+          <div className="w-full lg:w-5/12 p-10 px-3 sm:px-24 lg:px-10 xl:px-16">
+            <div className="text-3xl mb-6 font-bold flex justify-between items-end">
+              Music Station
+              <a
+                href="https://github.com/juker1141/music-vue"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <i className="fab fa-github-square text-3xl"></i>
+              </a>
+            </div>
+            <ul className="mb-2 flex text-white text-xs font-bold">
+              <li className="px-2 bg-green-500 rounded-lg mr-2">Vue</li>
+              <li className="px-2 bg-green-500 rounded-lg mr-2">Vuex</li>
+              <li className="px-2 bg-sky-500 rounded-lg">Tailwind CSS</li>
+            </ul>
+            <div className='mb-3'>
+              <strong>Music Station</strong>
+              <Trans>
+                {t('works.description.music.header')}
+              </Trans>
+            </div>
+            <Trans>
+              {t('works.description.music.content')}
+            </Trans>
+            <div className="flex justify-end mt-8">
+              <a
+                href="https://music-vue-wine.vercel.app/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="relative rounded-lg overflow-hidden py-2 px-4 group hidden lg:block"
+              >
+                <span className="absolute w-52 h-52 transform -rotate-45 group-hover:-top-14 group-hover:-left-8 transition-all ease-linear duration-300 bg-blue-900 left-36 top-14"></span>
+                <span className="relative font-RobotoCondensed text-base lg:text-xl group-hover:text-white duration-300 flex items-center">
+                  <span className="absolute w-full bottom-0 border-b-2 border-blue-900 duration-300"></span>
+                  {t('works.visitbutton')}
+                  <span className="material-icons text-xl ml-1">
+                    launch
+                  </span>
+                </span>
+              </a>
+              <a
+                href="https://music-vue-wine.vercel.app/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="rounded-lg py-2 px-4 hover:text-white hover:bg-blue-900 group lg:hidden
+                transition-all duration-300"
+              >
+                <span className="relative font-RobotoCondensed text-base lg:text-xl flex items-center
+                ">
+                  <span className="absolute w-full bottom-0 border-b-2 border-blue-900 duration-150"></span>
+                  {t('works.visitbutton')}
+                  <span className="material-icons text-xl ml-1">
+                    launch
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row
+          justify-center items-center mb-8 lg:mb-16">
+          <div className="w-full sm:w-5/6 lg:w-1/2">
             <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-storesImg_sm lg:bg-storesImg_lg_1
             lg:hover:bg-storesImg_lg_2 transition-all duration-500 bg-top bg-no-repeat bg-cover flex items-center justify-center">
               <div className="font-Orbitron text-white text-2xl md:text-4xl py-3 md:py-6 px-6 bg-primary bg-opacity-60

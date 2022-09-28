@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 .font-default {
   font-family: "Roboto", "Noto Sans TC", sans-serif;
 }
