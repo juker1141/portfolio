@@ -88,7 +88,7 @@ const Works = () => {
             </div>
           </div>
         </li>
-        <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row
+        <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row-reverse
           justify-center items-center mb-8 lg:mb-16">
           <div className="w-full sm:w-5/6 lg:w-1/2">
             <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-velhallaImg_sm lg:bg-velhallaImg_lg_1
@@ -231,7 +231,7 @@ const Works = () => {
             </div>
           </div>
         </li>
-        <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row
+        <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row-reverse
           justify-center items-center mb-8 lg:mb-16">
           <div className="w-full sm:w-5/6 lg:w-1/2">
             <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-storesImg_sm lg:bg-storesImg_lg_1
@@ -302,7 +302,7 @@ const Works = () => {
             </div>
           </div>
         </li>
-        <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row-reverse justify-center items-center mb-8 lg:mb-16">
+        <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row justify-center items-center mb-8 lg:mb-16">
           <div className="w-full sm:w-5/6 lg:w-1/2">
             <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-emailyImg_sm lg:bg-emailyImg_lg_1
             lg:hover:bg-emailyImg_lg_2 transition-all duration-500 bg-top bg-no-repeat bg-cover flex items-center justify-center">
@@ -369,7 +369,7 @@ const Works = () => {
             </div>
           </div>
         </li>
-        <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row
+        <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row-reverse
           justify-center items-center">
           <div className="w-full sm:w-5/6 lg:w-1/2">
             <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-maskMapImg_sm lg:bg-maskMapImg_lg_1
