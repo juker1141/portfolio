@@ -18,8 +18,7 @@ const Works = () => {
         <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row
           justify-center items-center mb-8 lg:mb-16">
           <div className="w-full sm:w-5/6 lg:w-1/2">
-            <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-metafameImg_sm lg:bg-metafameImg_lg_1
-            lg:hover:bg-metafameImg_lg_2 transition-all duration-500 bg-top bg-no-repeat bg-cover flex items-center justify-center">
+            <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-metafameImg_sm bg-top bg-no-repeat bg-cover flex items-center justify-center">
               <div className="font-Orbitron text-white text-2xl md:text-4xl py-3 md:py-6 px-6 bg-primary bg-opacity-60
               rounded-lg lg:hidden">
                 MetaFame
@@ -91,8 +90,7 @@ const Works = () => {
         <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row-reverse
           justify-center items-center mb-8 lg:mb-16">
           <div className="w-full sm:w-5/6 lg:w-1/2">
-            <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-velhallaImg_sm lg:bg-velhallaImg_lg_1
-            lg:hover:bg-velhallaImg_lg_2 transition-all duration-500 bg-top bg-no-repeat bg-cover flex items-center justify-center">
+            <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-velhallaImg_sm bg-top bg-no-repeat bg-cover flex items-center justify-center">
               <div className="font-Orbitron text-white text-2xl md:text-4xl py-3 md:py-6 px-6 bg-primary bg-opacity-60
               rounded-lg lg:hidden">
                 Velhalla
@@ -163,8 +161,7 @@ const Works = () => {
         <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row
           justify-center items-center mb-8 lg:mb-16">
           <div className="w-full sm:w-5/6 lg:w-1/2">
-            <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-musicImg_sm lg:bg-musicImg_lg_1
-            lg:hover:bg-musicImg_lg_2 transition-all duration-500 bg-top bg-no-repeat bg-cover flex items-center justify-center">
+            <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-musicImg_sm bg-top bg-no-repeat bg-cover flex items-center justify-center">
               <div className="font-Orbitron text-white text-2xl md:text-4xl py-3 md:py-6 px-6 bg-primary bg-opacity-60
               rounded-lg lg:hidden">
                 Music Station
