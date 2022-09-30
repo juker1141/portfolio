@@ -36,11 +36,10 @@ class ContactForm extends React.Component {
             onClick={this.props.reset}
             disabled={this.props.pristine || this.props.submitting}
           >
-            <span className="material-icons mr-1">
+            {this.props.t('contact.button.cancel')}
+            <span className="material-icons ml-1">
               clear
             </span>
-            {this.props.t('contact.button.cancel')}
-
           </button>
           <button
             className="bg-blue-900 text-white text-base font-bold py-4 px-24

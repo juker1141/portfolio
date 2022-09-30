@@ -1,5 +1,7 @@
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
+import velhallaLogo from "../assets/img/velhala_logo.svg";
+import metafameLogo from "../assets/img/metafame_logo.png";
 
 const Works = () => {
   const { t } = useTranslation();
@@ -19,8 +21,9 @@ const Works = () => {
           justify-center items-center mb-8 lg:mb-16">
           <div className="w-full sm:w-5/6 lg:w-1/2">
             <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-metafameImg_sm bg-top bg-no-repeat bg-cover flex items-center justify-center">
-              <div className="font-Orbitron text-white text-2xl md:text-4xl py-3 md:py-6 px-6 bg-primary bg-opacity-60
-              rounded-lg lg:hidden">
+              <div className="font-OpenSans text-white text-2xl md:text-4xl py-3 md:py-6 px-6 bg-primary bg-opacity-60
+              rounded-lg flex items-center">
+                <img className='h-12 w-12 mr-3' src={metafameLogo} alt="metafame-logo" />
                 MetaFame
               </div>
             </div>
@@ -91,8 +94,9 @@ const Works = () => {
           justify-center items-center mb-8 lg:mb-16">
           <div className="w-full sm:w-5/6 lg:w-1/2">
             <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-velhallaImg_sm bg-top bg-no-repeat bg-cover flex items-center justify-center">
-              <div className="font-Orbitron text-white text-2xl md:text-4xl py-3 md:py-6 px-6 bg-primary bg-opacity-60
-              rounded-lg lg:hidden">
+              <div className="font-Cinzel font-black text-white text-2xl md:text-5xl py-3 md:py-6 px-6 bg-primary bg-opacity-60
+              rounded-lg flex items-center">
+                <img className='h-12 w-12 mr-3' src={velhallaLogo} alt="velhalla-logo" />
                 Velhalla
               </div>
             </div>
@@ -162,8 +166,9 @@ const Works = () => {
           justify-center items-center mb-8 lg:mb-16">
           <div className="w-full sm:w-5/6 lg:w-1/2">
             <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-musicImg_sm bg-top bg-no-repeat bg-cover flex items-center justify-center">
-              <div className="font-Orbitron text-white text-2xl md:text-4xl py-3 md:py-6 px-6 bg-primary bg-opacity-60
-              rounded-lg lg:hidden">
+              <div className="font-OpenSans text-white text-2xl md:text-4xl py-3 md:py-6 px-6 font-bold bg-primary bg-opacity-60
+              rounded-lg">
+                <i className="fas fa-headphones-alt mr-3"></i>
                 Music Station
               </div>
             </div>
@@ -231,10 +236,9 @@ const Works = () => {
         <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row-reverse
           justify-center items-center mb-8 lg:mb-16">
           <div className="w-full sm:w-5/6 lg:w-1/2">
-            <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-storesImg_sm lg:bg-storesImg_lg_1
-            lg:hover:bg-storesImg_lg_2 transition-all duration-500 bg-top bg-no-repeat bg-cover flex items-center justify-center">
+            <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-storesImg_sm bg-top bg-no-repeat bg-cover flex items-center justify-center">
               <div className="font-Orbitron text-white text-2xl md:text-4xl py-3 md:py-6 px-6 bg-primary bg-opacity-60
-              rounded-lg lg:hidden">
+              rounded-lg">
                 Hardware Store
               </div>
             </div>
@@ -301,10 +305,9 @@ const Works = () => {
         </li>
         <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row justify-center items-center mb-8 lg:mb-16">
           <div className="w-full sm:w-5/6 lg:w-1/2">
-            <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-emailyImg_sm lg:bg-emailyImg_lg_1
-            lg:hover:bg-emailyImg_lg_2 transition-all duration-500 bg-top bg-no-repeat bg-cover flex items-center justify-center">
+            <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-emailyImg_sm bg-top bg-no-repeat bg-cover flex items-center justify-center">
               <div className="font-FugazOne text-white text-2xl md:text-4xl py-3 md:py-6 px-6 bg-primary bg-opacity-60
-              rounded-lg lg:hidden">
+              rounded-lg">
                 <i className="fas fa-paper-plane mr-3"></i>
                 Emaily
               </div>
@@ -369,10 +372,9 @@ const Works = () => {
         <li className="w-full lg:w-11/12 xl:10/12 flex flex-col lg:flex-row-reverse
           justify-center items-center">
           <div className="w-full sm:w-5/6 lg:w-1/2">
-            <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-maskMapImg_sm lg:bg-maskMapImg_lg_1
-            lg:hover:bg-maskMapImg_lg_2 transition-all duration-500 bg-left bg-no-repeat bg-cover flex items-center justify-center">
+            <div className="w-full h-52 sm:h-72 lg:h-96 rounded-lg bg-maskMapImg_sm bg-left bg-no-repeat bg-cover flex items-center justify-center">
               <div className="font-FjallaOne text-white text-2xl md:text-4xl py-3 md:py-6 px-6 bg-primary bg-opacity-60
-              rounded-lg lg:hidden flex items-center">
+              rounded-lg flex items-center">
                 <span className="material-icons-outlined mr-3 text-5xl md:text-6xl">
                   masks
                 </span>

@@ -38,6 +38,15 @@ body {
 .font-FjallaOne {
   font-family: "Fjalla One", sans-serif;
 }
+
+.font-OpenSans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.font-Cinzel {
+  font-family: "Cinzel", sans-serif;
+}
+
 .toggle-checkbox:checked {
   right: 0;
   border-color: #1e3a8a;
