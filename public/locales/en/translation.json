@@ -9,16 +9,16 @@
     "description": {
       "title": "Here are a few projects I've worked on recently.",
       "metafame": {
-        "header": " 是一個區塊鏈的專案，主要由我和一位後端開發",
-        "content": "我主要負責 Staking、NFT 頁面切版及前端網頁跟區塊鏈的智能合約交互，做出質押還有 NFT 盲盒的功能，使用的是 <strong className='font-Raleway'>Next.js & Ethers.js</strong> 開發，並且加入 <strong className='font-Raleway'>TypeScript</strong> 減少 Bug 及降低維護成本<br/><br/>依據客戶的需求，開發客製化的 NFT 角色販售，以及後續的 NFT 升級、抽獎、衣櫃功能。並且與美術配合使用 Spine 播放開箱、升級動畫，使用 SketchFab 展示 NFT 3D 角色模型"
+        "header": " is a blockchain project developed by me and backend developer.",
+        "content": "I was responsible for Staking & NFT page layout and interact with blockchain smart contract, build with <strong className='font-Raleway'>Next.js & Ethers.js</strong>. And introduced <strong className='font-Raleway'>TypeScript</strong> to reduce bug and maintain cost.<br/><br/>We developed staking and NFT character mint, makeover, refresh and wardrobe system for our customer. Also I use <strong className='font-Raleway'>Spine</strong> to play openbox, makeover animate and <strong className='font-Raleway'>SketchFab</strong> to show 3D NFT character"
       },
       "velhalla": {
-        "header": " 是一個區塊鏈的專案，主要由我與另一個資深的前輩兩個人一起摸索區塊鏈、​開發、測試、 重構",
-        "content": "我主要負責 Stake、Comic 頁面切版及前端網頁跟區塊鏈的智能合約交互，做出質押還有 NFT 卡片蒐集​五換一的功能，使用的是 <strong className='font-Raleway'>Next.js & Web3.js</strong> 開發<br/><br/>這是我第一次學習區塊鏈的相關知識，區塊鏈的智能合約在前端就像是跟一個沒有那麼穩定的後端串 API，因此很多 UI & UX 上的問題要特別細心處理。"
+        "header": " is my first blockchain project developed with a senior developer. We studied a lot of article for how to connect with blockchain and developed in two weeks",
+        "content": "I was responsible for Stake & Comic & Metaverse page layout and interact with blockchain smart contract. We developed stake and trading comic NFT system, build with <strong className='font-Raleway'>Next.js & Web3.js</strong>.<br/><br/>This is my first time learning about blockchain, that just like connect with a unstable backend API. That's why we spend a lot of time with UI & UX."
       },
       "music": {
-        "header": " 是我為了熟悉 Vue 3 嘗試寫的作品",
-        "content": "透過 <strong className='font-Raleway'>Vue CLI 4 & Vuex & Tailwind CSS</strong> 開發，並串接 <strong className='font-Raleway'>Firebase Database</strong><br /><br/>透過這個作品的練習，我更熟悉 Vue 3 的開發模式，並且也藉此機會嘗試看看 Firebase"
+        "header": " is a side project that I want to practise with Vue 3.",
+        "content": "build with <strong className='font-Raleway'>Vue CLI 4 & Vuex & Tailwind CSS</strong>, and use <strong className='font-Raleway'>Firebase Database</strong> to storage users & songs data.<br /><br/>In this side project practise, I was more familiar that how to developed with Vue 3. Also it was a good time to try to developing with Firebase."
       },
       "stores": {
         "header": " build with <strong className='font-Raleway'>Vue CLI</strong>.",
