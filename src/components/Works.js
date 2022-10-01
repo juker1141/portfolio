@@ -336,7 +336,7 @@ const Works = () => {
             </Trans>
             <div className="flex justify-end mt-8">
               <a
-                href="https://vast-retreat-86807.herokuapp.com/"
+                href="https://emaily-86807.herokuapp.com/"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="relative rounded-lg overflow-hidden py-2 px-4 group hidden lg:block"
@@ -351,7 +351,7 @@ const Works = () => {
                 </span>
               </a>
               <a
-                href="https://vast-retreat-86807.herokuapp.com/"
+                href="https://emaily-86807.herokuapp.com/"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="rounded-lg py-2 px-4 hover:text-white hover:bg-blue-900 group lg:hidden

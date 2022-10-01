@@ -17,7 +17,18 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 20s linear infinite',
+        'spin-reverse-slow': 'spin-reverse 15s linear infinite',
         'bounce-slow': 'bounce 2s linear infinite',
+      },   
+      keyframes: {
+        "spin-reverse": {
+          "0%": {
+            transform: "rotate(360deg)"
+          },
+          "100%": {
+            transform: "rotate(0deg)"
+          },
+        }
       },
       backgroundImage: theme => ({
         'meImg': "url('../src/assets/img/me.jpg')",

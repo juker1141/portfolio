@@ -62,7 +62,7 @@ const Banner = () => {
             style={gearImgStyle}
           ></div>
           <div
-            className="absolute animate-spin-slow lg:top-36 lg:left-10 lg:mt-2 lg:h-16 lg:w-16
+            className="absolute animate-spin-reverse-slow lg:top-36 lg:left-10 lg:mt-2 lg:h-16 lg:w-16
             xl:top-32 xl:left-16 2xl:top-24 2xl:left-16 2xl:ml-2 2xl:h-20 2xl:w-20"
             style={gearImgStyle}
           ></div>
